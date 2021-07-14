@@ -15,7 +15,16 @@ a {
 }
 
 ul {
+  display: flex;
   list-style: none;
+}
+
+ul li {
+  margin-left: 40px;
+}
+
+.active {
+  color: #ffd6d6;
 }
 
 .container {

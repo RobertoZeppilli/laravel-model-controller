@@ -12,7 +12,14 @@ a {
     color: $lightText;
 }
 ul {
+    display: flex;
     list-style: none;
+    li {
+        margin-left: 40px;
+    }
+}
+.active {
+    color: $active;
 }
 .container {
     width: 80%;

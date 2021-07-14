@@ -21,4 +21,11 @@ class MovieController extends Controller
         return view('home', compact('title','movies'));
     }
 
+    public function getP() {
+        $title = "I film con la P";
+        $query = Movie::where('title', 'LIKE', 'P%');
+        $movies = $query->get();
+
+        return view('films', compact('title','movies'));
+    }
 }
