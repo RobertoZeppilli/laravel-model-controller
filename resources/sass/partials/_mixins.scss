@@ -1,0 +1,14 @@
+// flex center
+@mixin flexCenter($type: 'default') {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// grid (5 columns with 2em gap)
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2em;
+}

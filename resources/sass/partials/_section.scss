@@ -1,0 +1,23 @@
+
+.movies {
+    @include grid;
+    height: 100%;
+    padding: 30px 0;
+    .movie {
+        @include flexCenter;
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+        background-color: $secondaryBg;
+        color: $lightText;
+        h3,
+        h4,
+        .nationality,
+        .date {
+            margin-bottom: 10px;
+        }
+        small {
+            display: block;
+        }
+    }
+}
